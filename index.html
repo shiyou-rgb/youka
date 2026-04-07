@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>副業で月10万円を得る 占い副業メソッド - 占い実践カレッジ</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                        serif: ['"Noto Serif JP"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-800 font-sans selection:bg-rose-200 selection:text-rose-900">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-rose-100 shadow-sm">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <i data-lucide="heart" class="text-rose-500 w-5 h-5 fill-current opacity-80"></i>
+                <div class="flex flex-col">
+                    <span class="text-xs text-rose-500 font-medium tracking-widest">占い実践カレッジ</span>
+                    <span class="font-semibold text-slate-800 tracking-wider text-sm">占い副業メソッドシリーズ</span>
+                </div>
+            </div>
+            <a href="#pricing" class="hidden md:inline-flex items-center gap-2 bg-rose-500 hover:bg-rose-600 text-white px-6 py-2.5 rounded-full text-sm font-medium transition-colors tracking-widest shadow-md shadow-rose-500/20">
+                初月980円で始める
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-rose-100 via-purple-50 to-amber-50 px-6 pt-24 pb-28 md:pt-32 md:pb-36 relative overflow-hidden text-center">
+        <div class="absolute top-0 left-0 w-full h-full opacity-30 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] pointer-events-none z-0"></div>
+        
+        <div class="max-w-4xl mx-auto relative z-10 animate-fade-in-up">
+            <span class="inline-block py-1.5 px-6 rounded-full border border-rose-200 bg-white/80 text-rose-600 text-sm font-bold tracking-widest mb-8 shadow-sm">
+                占い実践カレッジ 動画講座 新シリーズ
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-slate-800 leading-tight mb-8">
+                好きな占いを副業にする<br class="hidden md:block">
+                <span class="text-rose-600 block mt-4 text-3xl md:text-4xl lg:text-5xl">
+                    副業で月10万円を得る 占い副業メソッド
+                </span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-12 font-medium leading-relaxed max-w-2xl mx-auto">
+                挫折から這い上がり、副業で月10万円を達成した蓉伽の実践ノウハウ。<br class="hidden md:block">
+                圧倒的なリピート率を生み出す「心の解剖学」と、<br class="hidden md:block">
+                安定した収入を得るためのロードマップを公開する動画講座。
+            </p>
+            
+            <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#pricing" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-rose-500 hover:bg-rose-600 text-white px-10 py-5 rounded-full font-bold text-lg transition-all shadow-xl shadow-rose-500/30 hover:shadow-rose-500/50 hover:-translate-y-1 tracking-widest">
+                    サブスクに登録して視聴する
+                    <i data-lucide="arrow-right" class="w-5 h-5 opacity-80"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empathy Section (鑑定士のお悩み) -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl md:text-3xl font-serif font-bold text-slate-800 mb-6 tracking-wide">鑑定の現場で、こんなお悩みありませんか？</h2>
+                <div class="w-12 h-1 bg-rose-400 mx-auto mb-6 rounded-full"></div>
+                <p class="text-slate-600 leading-relaxed">
+                    日々の鑑定、本当にお疲れ様です。<br class="hidden md:block">
+                    占いを仕事にしたい、副業で収入を得たいと頑張る中で、壁にぶつかっていませんか？
+                </p>
+            </div>
+
+            <div class="bg-rose-50/50 rounded-3xl p-8 md:p-12 shadow-sm border border-rose-100 mb-12">
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-5 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:border-rose-200 transition-colors">
+                        <div class="mt-1 text-rose-400 shrink-0">
+                            <i data-lucide="message-square" class="w-6 h-6 fill-current opacity-20"></i>
+                        </div>
+                        <p class="text-slate-700 font-medium leading-relaxed">
+                            「待機してもなかなか依頼が入らない。入っても初回だけでリピートに繋がらない…」
+                        </p>
+                    </li>
+                    <li class="flex items-start gap-5 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:border-rose-200 transition-colors">
+                        <div class="mt-1 text-rose-400 shrink-0">
+                            <i data-lucide="message-square" class="w-6 h-6 fill-current opacity-20"></i>
+                        </div>
+                        <p class="text-slate-700 font-medium leading-relaxed">
+                            「オーディションに落ち続け、自分には才能がないのではないかと自信を無くしている」
+                        </p>
+                    </li>
+                    <li class="flex items-start gap-5 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:border-rose-200 transition-colors">
+                        <div class="mt-1 text-rose-400 shrink-0">
+                            <i data-lucide="message-square" class="w-6 h-6 fill-current opacity-20"></i>
+                        </div>
+                        <p class="text-slate-700 font-medium leading-relaxed">
+                            「単価が安いサイトから抜け出せず、労力の割に収入が少なくて疲弊してしまう」
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-center space-y-6 text-lg text-slate-700 leading-loose">
+                <p>
+                    占いの技術（占術）を学ぶだけでは、安定した収入を得ることはできません。<br>
+                    本当に必要なのは、お客様の心を掴む<strong>「寄り添い力」と、選ばれ続けるための「実践的なメソッド」</strong>です。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Needed Section (解決策・理由) -->
+    <section class="py-24 px-6 bg-rose-50/80 border-y border-rose-200 relative overflow-hidden shadow-[inset_0_0_20px_rgba(225,29,72,0.02)]">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-30 pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-800 mb-6 tracking-widest">蓉伽の「占い副業メソッド」とは</h2>
+                <div class="w-12 h-1 bg-rose-400 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
+                <div class="flex-1 text-center md:text-left space-y-8 text-lg leading-relaxed text-slate-600">
+                    <div class="inline-block bg-white border border-rose-200 text-rose-600 px-6 py-4 md:px-8 md:py-5 rounded-2xl font-bold text-sm md:text-base shadow-sm leading-loose">
+                        「仏教由来のコミュニケーション術」 <span class="text-slate-400 mx-1 md:mx-2">×</span><wbr>「心理学的カウンセリング技術」 <span class="text-slate-400 mx-1 md:mx-2">×</span><wbr>「占い実践カレッジでの学び」
+                    </div>
+                    <p class="font-bold text-2xl text-slate-800 mt-8 leading-relaxed">
+                        3つの柱を掛け合わせ、<br class="hidden md:block">圧倒的な「寄り添い力」を生み出す。
+                    </p>
+                    
+                    <div class="space-y-4 text-base text-left">
+                        <div class="bg-white p-5 rounded-2xl border border-rose-100 shadow-sm hover:border-rose-300 transition-colors">
+                            <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-rose-400 inline-block"></span>
+                                仏教由来のコミュニケーション術
+                            </h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                人としての正しい道を説く教えをベースに、占い師としての倫理観を養います。相談者を決して傷つけず、誠実に、そしてフラットな心で向き合うための「心の土台」を作ります。
+                            </p>
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl border border-rose-100 shadow-sm hover:border-rose-300 transition-colors">
+                            <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-rose-400 inline-block"></span>
+                                心理学的カウンセリング技術
+                            </h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                「傾聴」と「共感」の技術を用い、表面的な言葉の奥に隠された本当の痛みや望みを引き出します。相手の心に深く寄り添い、「この人はわかってくれる」という安心感を与えます。
+                            </p>
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl border border-rose-100 shadow-sm hover:border-rose-300 transition-colors">
+                            <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-rose-400 inline-block"></span>
+                                占い実践カレッジでの学び
+                            </h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                本カレッジで提供される神様学や風水、身体の知識などの多彩なコンテンツで得た学びを鑑定に落とし込みます。多角的な視点から根拠のあるアドバイスを行うことで、言葉の説得力を高めます。
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="text-slate-600 text-sm leading-loose mt-6">
+                        これら3つの要素を融合させることで、特別な才能がなくても、相談者様から深く信頼され選ばれ続ける鑑定を実現できるようになります。
+                    </p>
+                </div>
+                
+                <div class="flex-1 w-full bg-white p-8 md:p-10 rounded-3xl border border-rose-100 relative shadow-xl">
+                    <div class="absolute -top-5 -left-5 bg-rose-500 text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <div class="space-y-6">
+                        <p class="text-slate-800 font-medium text-lg italic leading-relaxed">
+                            「この先生は私の本当の痛みをわかってくれる！」
+                        </p>
+                        <p class="text-slate-800 font-medium text-lg italic leading-relaxed">
+                            「また何かあったら、絶対に〇〇先生に相談したい。」
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-100 mt-8 pt-8 text-slate-500 text-sm leading-loose">
+                        これが、数多くの占い師の中からあなたが「選ばれ続ける理由」になるのです。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum (学べること) -->
+    <section class="py-24 px-6 bg-white relative">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-rose-500 font-bold tracking-widest text-sm uppercase block mb-3">Curriculum</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-800 mb-6 tracking-wide">このシリーズで学べること</h2>
+                <div class="w-12 h-1 bg-rose-400 mx-auto mb-8 rounded-full"></div>
+                <p class="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
+                    挫折から月10万円達成までに実践した、リアルなステップと「お客様が集まる占い師」になるための本質的なスキルを公開します。
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-300 transition-all group">
+                    <div class="w-12 h-12 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="book-open" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 leading-relaxed">
+                        ゼロから月10万達成までの<br><span class="text-rose-500">リアルな軌跡</span>
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        オーディション連敗からチャット占いでの下積み、そして大手電話占いサイト合格へ。蓉伽が実際に歩んだロードマップと、各フェーズでの壁の乗り越え方を解説します。
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-300 transition-all group">
+                    <div class="w-12 h-12 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="clock" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 leading-relaxed">
+                        リピート率を劇的に上げる<br><span class="text-rose-500">「人の心の解剖学」</span>
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        恋愛、不倫、人間関係など「よくある相談」の根底に隠れた心理を1年間徹底研究したデータを公開。表面的な悩みではなく「本当の痛み」にアプローチする術を学びます。
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-300 transition-all group">
+                    <div class="w-12 h-12 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="heart" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 leading-relaxed">
+                        限られた時間で心をつかむ<br><span class="text-rose-500">「スピーディーな見抜く力」</span>
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        チャット占いの過酷な現場で鍛え上げられた、短時間でお客様のSOSを抽出し、的確な言葉を届ける実践的なテクニックをお伝えします。
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl border border-rose-100 shadow-sm hover:shadow-md hover:border-rose-300 transition-all group">
+                    <div class="w-12 h-12 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 leading-relaxed">
+                        長く稼ぎ続けるための<br><span class="text-rose-500">占い師のメンタルケア</span>
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        HSP気質など、他人の感情を強く受け取ってしまう人が、疲弊せずに副業を続けるための自己防衛術とマインドセットを解説します。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile (講師紹介) -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-rose-500 font-bold tracking-widest text-sm uppercase block mb-3">Profile</span>
+                <h2 class="text-3xl font-serif font-bold text-slate-800 mb-6 tracking-wide">講師紹介</h2>
+                <div class="w-12 h-1 bg-rose-400 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="bg-slate-50 rounded-3xl p-8 md:p-12 lg:p-16 border border-slate-100 shadow-sm relative overflow-hidden flex flex-col md:flex-row items-center gap-10">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-rose-100/50 rounded-full blur-3xl"></div>
+                
+                <div class="md:w-1/3 shrink-0 relative z-10">
+                    <img 
+                        src="名称未設定のデザイン (1).png" 
+                        alt="講師 蓉伽" 
+                        class="w-full max-w-[280px] aspect-square mx-auto rounded-full shadow-lg object-cover"
+                    >
+                </div>
+
+                <div class="md:w-2/3 text-center md:text-left relative z-10">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-1">占い師 蓉伽 <span class="text-base font-normal text-slate-500 ml-2">（ようか）</span></h3>
+                    <p class="text-rose-500 text-sm tracking-widest mb-8 font-bold">大手電話占いサイト所属</p>
+                    
+                    <div class="space-y-4 text-slate-700 leading-relaxed text-left">
+                        <p>
+                            百貨店の販売員、レンタカー会社勤務を経て占い師の道へ。信心深い家系に育ち、幼少期より「人の顔を見ると心の状態がわかる」という敏感すぎる感覚（HSP気質）に悩み、他人の感情を受け取りすぎる苦痛を抱えて生きてきた。
+                        </p>
+                        <p>
+                            占い師を志すも、オーディションの連続不合格など数々の挫折を経験。しかし師匠の「この感覚は人を救うために活かせる」という教えを胸に、占術・心理学・寄り添い方を徹底的に学ぶ。
+                        </p>
+                        <p>
+                            チャット占いで培ったスピーディーな本質を見抜く力をベースに、約1年をかけて「よくある相談の根底にある理由と背景」を整理・分析。現在の大手電話占いサイトでは、その圧倒的な共感力と深い分析力でコアなリピーター様から厚い支持を得ている。
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Future / Benefits (得られる未来) -->
+    <section class="py-24 px-6 bg-slate-50 text-center relative overflow-hidden border-y border-slate-200">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <i data-lucide="sparkles" class="w-12 h-12 text-rose-400 mx-auto mb-8"></i>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-8 tracking-wide text-slate-800">この講座で、あなたが得られる未来</h2>
+            <p class="text-slate-600 text-lg mb-16 leading-relaxed">蓉伽の知識と経験を手に入れたあなたは、鑑定士として次のステージへ進みます。</p>
+
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="bg-white p-8 rounded-2xl border-t-4 border-rose-400 shadow-md relative overflow-hidden hover:-translate-y-1 transition-transform">
+                    <i data-lucide="check-circle" class="w-8 h-8 text-rose-200 mb-4"></i>
+                    <p class="text-slate-700 leading-relaxed font-medium">
+                        「待機しても依頼がない」「単価が上がらない」という悩みを抜け出し、<strong class="text-rose-600 block mt-2 text-xl">安定した依頼の獲得へと繋がります。</strong>
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border-t-4 border-rose-400 shadow-md relative overflow-hidden hover:-translate-y-1 transition-transform">
+                    <i data-lucide="check-circle" class="w-8 h-8 text-rose-200 mb-4"></i>
+                    <p class="text-slate-700 leading-relaxed font-medium">
+                        お客様の本当の痛みを理解し寄り添うことで、<strong class="text-rose-600 block mt-2 text-xl">「あなただからお願いしたい」と言われる鑑定士を目指せます。</strong>
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border-t-4 border-rose-400 shadow-md relative overflow-hidden hover:-translate-y-1 transition-transform">
+                    <i data-lucide="check-circle" class="w-8 h-8 text-rose-200 mb-4"></i>
+                    <p class="text-slate-700 leading-relaxed font-medium">
+                        占いという大好きな仕事で、<strong class="text-rose-600 block mt-2 text-xl">副業として月に10万円以上の安定した収入を得るという目標に近づくことができます。</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Full Contents (サブスク全容) -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-rose-500 font-bold tracking-widest text-sm uppercase block mb-3">All Inclusive</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-800 mb-6 tracking-wide">
+                    占い実践カレッジで<br class="md:hidden">学び放題のコンテンツ
+                </h2>
+                <div class="w-12 h-1 bg-rose-400 mx-auto mb-8 rounded-full"></div>
+                <p class="text-slate-600 text-lg max-w-2xl mx-auto leading-relaxed">
+                    サブスクリプションにご登録いただくと、蓉伽の新シリーズに加えて、鑑定士としての実力を飛躍的に高める「すべてのコンテンツ」が見放題・読み放題になります。
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                <!-- Content 1 (NEW) -->
+                <div class="bg-rose-50 rounded-2xl p-8 border border-rose-200 relative overflow-hidden shadow-md">
+                    <div class="absolute top-0 right-0 bg-rose-500 text-white text-[10px] font-bold tracking-widest px-4 py-1.5 z-10 shadow-sm rounded-bl-lg">
+                        NEW
+                    </div>
+                    <div class="text-rose-500 mb-5">
+                        <i data-lucide="heart" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-3 text-lg leading-snug">副業で月10万円を得る<br>占い副業メソッド</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">【占い師蓉伽 解説】挫折から月10万達成までのリアルな軌跡と、圧倒的リピートを生む「人の心の解剖学」を公開。</p>
+                </div>
+
+                <!-- Content 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 relative overflow-hidden shadow-sm hover:shadow-md hover:border-slate-300 transition-all">
+                    <div class="text-amber-500 mb-5">
+                        <i data-lucide="book-open" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-3 text-lg leading-snug">神職が監修、<br>占い師のための「神様学」</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">【神職蘭世 監修】神社本庁「正階」の資格を持つ本物の神職が、神道や神様、正しい参拝作法を解説。</p>
+                </div>
+
+                <!-- Content 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 relative overflow-hidden shadow-sm hover:shadow-md hover:border-slate-300 transition-all">
+                    <div class="text-teal-500 mb-5">
+                        <i data-lucide="stethoscope" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-3 text-lg leading-snug">理学療法士が教える<br>「身体と福祉の知識」</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">【理学療法士中村崇秀 解説】医療・介護のリアルな現場視点から、相談者様の深い悩みに具体的で現実的なアドバイスができる知識を。</p>
+                </div>
+
+                <!-- Content 4 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 relative overflow-hidden shadow-sm hover:shadow-md hover:border-slate-300 transition-all">
+                    <div class="text-blue-500 mb-5">
+                        <i data-lucide="compass" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-3 text-lg leading-snug">風水動画講座</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">ご自身で本格的な「風水の鑑定書」を作成し、実際の鑑定メニューとして提供できるレベルまで実践的に学べます。</p>
+                </div>
+
+                <!-- Content 5 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 relative overflow-hidden shadow-sm hover:shadow-md hover:border-slate-300 transition-all">
+                    <div class="text-purple-500 mb-5">
+                        <i data-lucide="smile" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-3 text-lg leading-snug">人相動画講座</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">顔のパーツや表情から性格・運勢を読み解く技術。オンライン鑑定でも強力な武器になります。</p>
+                </div>
+
+                <!-- Content 6 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 relative overflow-hidden shadow-sm hover:shadow-md hover:border-slate-300 transition-all">
+                    <div class="text-slate-400 mb-5">
+                        <i data-lucide="file-text" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-3 text-lg leading-snug">実践的PDF資料</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">鑑定ですぐに使える早見表や、資料集としてのお役立ちPDFを自由にダウンロード・閲覧できます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & CTA -->
+    <section id="pricing" class="py-24 px-6 bg-gradient-to-b from-white to-rose-50 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-30 pointer-events-none"></div>
+
+        <div class="max-w-3xl mx-auto text-center relative z-10">
+            <span class="text-rose-500 font-bold tracking-widest text-sm uppercase mb-3 block">占い実践カレッジ サブスクリプション</span>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-slate-800 mb-8 tracking-wide">すべての動画が見放題になるプラン</h2>
+            <p class="text-slate-600 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+                本シリーズ「占い副業メソッド」を含む、すべての実践的コンテンツが見放題。<br>
+                まずは内容を実感していただくため、始めやすいプランをご用意しました。
+            </p>
+
+            <div class="bg-white rounded-3xl shadow-2xl border-4 border-rose-500 overflow-hidden mb-16 transform hover:-translate-y-1 transition-transform max-w-xl mx-auto">
+                <div class="bg-rose-500 text-white py-5 font-bold tracking-widest text-lg text-center">
+                    月額プラン料金
+                </div>
+                <div class="p-8 md:p-12">
+                    <div class="mb-10 border-b border-slate-100 pb-10">
+                        <span class="text-rose-600 font-bold text-xl mb-4 block tracking-wider">初月お試し</span>
+                        <div class="flex items-baseline justify-center gap-2">
+                            <span class="text-6xl font-bold text-slate-800 tracking-tight">980</span>
+                            <span class="text-slate-500 font-medium text-lg">円(税込)</span>
+                        </div>
+                        <p class="text-slate-600 mt-5 text-sm leading-relaxed">まずは1ヶ月、動画の内容やご自身の鑑定への<br>活かしやすさを実感してください。</p>
+
+                        <div class="mt-8 p-6 bg-rose-50 border border-rose-200 text-center rounded-2xl">
+                            <p class="text-sm text-rose-600 font-bold mb-3 tracking-wide">＼ 初月980円で始めるための必須コード ／</p>
+                            <p class="text-xs text-slate-500 mb-4">決済画面で以下のクーポンコードを必ずご入力ください</p>
+                            <div class="inline-block bg-white border border-rose-200 px-8 py-4 text-2xl font-mono font-bold text-slate-800 tracking-widest select-all shadow-sm rounded-xl">
+                                0butff3wgel
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <span class="text-slate-600 font-bold mb-3 block tracking-wider">2ヶ月目以降</span>
+                        <div class="flex items-baseline justify-center gap-2">
+                            <span class="text-4xl font-bold text-slate-800 tracking-tight">9,800</span>
+                            <span class="text-slate-500 text-sm font-medium">円/月(税込)</span>
+                        </div>
+                        <p class="text-slate-400 text-xs mt-3">（※いつでも解約可能です）</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <a href="https://mosh.jp/services/ce35356dd5c24df0afa8e54c11f2269e" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-4 bg-rose-500 hover:bg-rose-600 text-white px-12 py-6 rounded-full font-bold text-xl transition-all shadow-xl shadow-rose-500/30 hover:shadow-rose-500/50 hover:scale-105 tracking-widest">
+                    サブスクに登録して視聴する
+                    <i data-lucide="chevron-right" class="w-6 h-6 opacity-80"></i>
+                </a>
+                <p class="text-sm text-slate-500 mt-6 font-medium">※お申し込みはMOSHの会員登録が必要です。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 px-6 text-center text-sm">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="tracking-widest">&copy; <script>document.write(new Date().getFullYear())</script> 占い実践カレッジ</p>
+            <div class="flex gap-6">
+                <a href="https://ishikawaseiryu.website/%e7%89%b9%e5%ae%9a%e5%95%86%e5%8f%96%e5%bc%95%e6%b3%95%e3%81%ab%e5%9f%ba%e3%81%a5%e3%81%8f%e8%a1%a8%e8%a8%98/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors tracking-widest">特定商取引法に基づく表記</a>
+                <a href="https://ishikawaseiryu.website/privacy-policy/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors tracking-widest">プライバシーポリシー</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+</html>
